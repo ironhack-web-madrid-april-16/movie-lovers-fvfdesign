@@ -1,0 +1,15 @@
+<html>
+<head> <h1>MOVIELOVERS</h1>
+  <title>Formulario</title>
+</head>
+	<body>
+		<h2>MOVIE LOVERS SEARCHING</h2>
+		<form action="/list_of_movies" name="movie" id="movie" method='post'>
+			<label>Write a word</label>
+			<input type="text" name="word"></imput><p>
+			<button type="submit">Enter</button>
+		</form>
+		<% if @result %>
+		<h1><%= @result %></h1>
+	<% end %>
+			
